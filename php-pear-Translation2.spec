@@ -1,15 +1,14 @@
 %define		_class		Translation2
-%define		_status		beta
+%define		_status		stable
 %define		_pearname	%{_class}
 
 Summary:	%{_pearname} - class for multilingual applications management
 Name:		php-pear-%{_pearname}
 Version:	2.0.1
-%define	_version 2.0.0beta8
-Release:	%mkrel 2
+Release:	%mkrel 1
 License:	PHP License
 Group:		Development/PHP
-Source0:	http://pear.php.net/get/%{_pearname}-%{_version}.tar.bz2
+Source0:	http://pear.php.net/get/%{_pearname}-%{version}.tgz
 URL:		http://pear.php.net/package/Translation2/
 Requires(post): php-pear
 Requires(preun): php-pear
@@ -48,10 +47,10 @@ rm -rf %{buildroot}
 
 install -d %{buildroot}%{_datadir}/pear/%{_class}/{Admin/Container,Container}
 
-install %{_pearname}-%{_version}/%{_pearname}.php %{buildroot}%{_datadir}/pear/
-install %{_pearname}-%{_version}/{Admin,Container,Decorator}.php %{buildroot}%{_datadir}/pear/%{_class}
-install %{_pearname}-%{_version}/Admin/Container/*.php %{buildroot}%{_datadir}/pear/%{_class}/Admin/Container
-install %{_pearname}-%{_version}/Container/*.php %{buildroot}%{_datadir}/pear/%{_class}/Container
+install %{_pearname}-%{version}/%{_pearname}.php %{buildroot}%{_datadir}/pear/
+install %{_pearname}-%{version}/{Admin,Container,Decorator}.php %{buildroot}%{_datadir}/pear/%{_class}
+install %{_pearname}-%{version}/Admin/Container/*.php %{buildroot}%{_datadir}/pear/%{_class}/Admin/Container
+install %{_pearname}-%{version}/Container/*.php %{buildroot}%{_datadir}/pear/%{_class}/Container
 
 install -d %{buildroot}%{_datadir}/pear/packages
 install -m0644 package.xml %{buildroot}%{_datadir}/pear/packages/%{_pearname}.xml
@@ -80,7 +79,7 @@ rm -rf %{buildroot}
 
 %files
 %defattr(644,root,root,755)
-%doc %{_pearname}-%{_version}/docs
+%doc %{_pearname}-%{version}/docs
 %{_datadir}/pear/%{_class}.php
 %{_datadir}/pear/%{_class}
 %{_datadir}/pear/packages/%{_pearname}.xml
