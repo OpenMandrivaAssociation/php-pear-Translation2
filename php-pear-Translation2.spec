@@ -5,7 +5,7 @@
 Summary:	%{_pearname} - class for multilingual applications management
 Name:		php-pear-%{_pearname}
 Version:	2.0.1
-Release:	%mkrel 1
+Release:	%mkrel 3
 License:	PHP License
 Group:		Development/PHP
 Source0:	http://pear.php.net/get/%{_pearname}-%{version}.tgz
