@@ -2,8 +2,8 @@
 %define		upstream_name	%{_class}
 
 Name:		php-pear-%{upstream_name}
-Version:	2.0.1
-Release:	%mkrel 6
+Version:	2.0.4
+Release:	%mkrel 1
 Summary:	Class for multilingual applications management
 License:	PHP License
 Group:		Development/PHP
