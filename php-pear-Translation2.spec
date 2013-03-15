@@ -3,7 +3,7 @@
 
 Name:		php-pear-%{upstream_name}
 Version:	2.0.4
-Release:	%mkrel 2
+Release:	3
 Summary:	Class for multilingual applications management
 License:	PHP License
 Group:		Development/PHP
@@ -14,7 +14,6 @@ Requires(preun): php-pear
 Requires:	php-pear
 BuildArch:	noarch
 BuildRequires:	php-pear
-BuildRoot:	%{_tmppath}/%{name}-%{version}
 
 %description
 This class provides an easy way to retrieve all the strings for a
@@ -29,7 +28,6 @@ translations (add/remove a language, add/remove a string).
 mv package.xml %{upstream_name}-%{version}/%{upstream_name}.xml
 
 %install
-rm -rf %{buildroot}
 
 cd %{upstream_name}-%{version}
 pear install --nodeps --packagingroot %{buildroot} %{upstream_name}.xml
@@ -42,7 +40,6 @@ install -d %{buildroot}%{_datadir}/pear/packages
 install -m 644 %{upstream_name}.xml %{buildroot}%{_datadir}/pear/packages
 
 %clean
-rm -rf %{buildroot}
 
 
 
