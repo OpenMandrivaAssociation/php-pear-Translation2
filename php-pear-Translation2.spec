@@ -3,7 +3,7 @@
 
 Name:		php-pear-%{upstream_name}
 Version:	2.0.4
-Release:	3
+Release:	4
 Summary:	Class for multilingual applications management
 License:	PHP License
 Group:		Development/PHP
