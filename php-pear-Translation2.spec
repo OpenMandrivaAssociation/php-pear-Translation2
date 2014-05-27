@@ -1,10 +1,11 @@
 %define	_class	Translation2
 %define	modname	%{_class}
+%define __noautoreq '/usr/bin/php'
 
 Summary:	Class for multilingual applications management
 Name:		php-pear-%{modname}
 Version:	2.0.4
-Release:	7
+Release:	8
 License:	PHP License
 Group:		Development/PHP
 Url:		http://pear.php.net/package/Translation2/
