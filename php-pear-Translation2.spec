@@ -8,7 +8,7 @@ Version:	2.0.4
 Release:	13
 License:	PHP License
 Group:		Development/PHP
-Url:		http://pear.php.net/package/Translation2/
+Url:		https://pear.php.net/package/Translation2/
 Source0:	http://download.pear.php.net/package/%{modname}-%{version}.tgz
 BuildArch:	noarch
 BuildRequires:	php-pear
